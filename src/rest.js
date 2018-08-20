@@ -26,7 +26,8 @@ export const concat3 = (func, ...args) => {
 };
 
 export const concat4 = (func, func2) => {
+  //Rest
   return (...args) => {
-    return func2(func, ...args);
+    return func2(func, ...args); //Spread
   };
 };
